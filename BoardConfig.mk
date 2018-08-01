@@ -23,6 +23,7 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Kernel
 TARGET_KERNEL_CONFIG := cedric_defconfig
+TARGET_KERNEL_CLANG_COMPILE := true
 
 # NFC
 NXP_CHIP_TYPE := pn554
