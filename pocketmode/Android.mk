@@ -7,7 +7,7 @@ LOCAL_SRC_FILES := $(call all-java-files-under, src)
 
 LOCAL_PACKAGE_NAME := MotoPocketMode
 LOCAL_CERTIFICATE := platform
-LOCAL_PRIVATE_PLATFORM_APIS := true
+LOCAL_SDK_VERSION := current
 LOCAL_VENDOR_MODULE := true
 LOCAL_REQUIRED_MODULES := pocketmode_whitelist.xml
 
