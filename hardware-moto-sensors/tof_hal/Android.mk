@@ -37,7 +37,7 @@ LOCAL_SRC_FILES := \
 LOCAL_C_INCLUDES += \
     $(LOCAL_PATH)/.. \
     $(LOCAL_PATH)/../motosh_hal \
-    system/core/base/include \
+    system/libbase/include \
     $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include
 
 LOCAL_C_INCLUDES += external/zlib

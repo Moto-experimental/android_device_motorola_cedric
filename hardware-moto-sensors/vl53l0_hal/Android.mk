@@ -36,7 +36,7 @@ LOCAL_SRC_FILES := \
 
 LOCAL_C_INCLUDES += \
     $(LOCAL_PATH)/.. \
-    system/core/base/include \
+    system/libbase/include \
     $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include
 
 LOCAL_C_INCLUDES += external/zlib

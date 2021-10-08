@@ -167,7 +167,7 @@ ifeq ($(BOARD_USES_MOT_SENSOR_HUB), true)
         LOCAL_C_INCLUDES += external/zlib
 
         LOCAL_C_INCLUDES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include \
-                            system/core/base/include
+                            system/libbase/include
 
         # Needs to be added after KERNEL_OBJ/usr/include
         ifeq ($(MOT_SENSOR_HUB_HW_TYPE_L4), true)
