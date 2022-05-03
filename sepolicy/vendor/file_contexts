@@ -13,3 +13,11 @@
 
 # Touch
 /(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch@1\.0-service\.cedric u:object_r:hal_lineage_touch_default_exec:s0
+
+# smart charging/cutoff
+/sys/class/power_supply/battery/charging_enabled                u:object_r:sysfs_device_info:s0
+/sys/class/power_supply/battery/temp                            u:object_r:sysfs_device_info:s0
+
+# system info
+/sys/class/thermal/thermal_zone0/temp                         u:object_r:sysfs_device_info:s0
+/sys/devices/virtual/graphics/fb0/measured_fps                u:object_r:sysfs_device_info:s0

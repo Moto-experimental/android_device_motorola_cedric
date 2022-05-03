@@ -1,0 +1,7 @@
+# system info
+allow platform_app sysfs_device_info:dir search;
+allow platform_app sysfs_device_info:file { getattr open read };
+allow platform_app sysfs_device_info:dir search;
+allow platform_app sysfs_device_info:file { getattr open read }; 
+allow platform_app sysfs_device_info:dir search;
+allow platform_app sysfs_device_info:file { getattr open read };

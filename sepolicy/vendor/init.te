@@ -1,0 +1,2 @@
+# charging switch
+allow init sysfs_device_info:file { setattr };
