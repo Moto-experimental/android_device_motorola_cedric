@@ -3,4 +3,3 @@ binder_call(hal_lineage_touch_default, hal_fingerprint)
 
 # Allow hal_lineage_touch_default to find fpc_extension_service
 allow hal_lineage_touch_default fpc_extension_service:hwservice_manager find;
-
