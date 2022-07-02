@@ -15,9 +15,16 @@ TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
 # Overlays
+ifeq ($(GAPPS),true)
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay \
+    $(LOCAL_PATH)/overlay-gapps
+$(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
+else
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
+endif
 
 # Properties
 -include $(LOCAL_PATH)/vendor_prop.mk
