@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <bool name="config_animateScreenLights">false</bool>
+    <bool name="config_liveDisplayAvailable">true</bool>
+    <bool name="config_setColorTransformAccelerated">true</bool>
+</resources>
