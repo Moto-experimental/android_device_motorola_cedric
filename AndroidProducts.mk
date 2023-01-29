@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_cedric.mk
+    $(LOCAL_DIR)/aicp_cedric.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_cedric-user \
-    lineage_cedric-userdebug \
-    lineage_cedric-eng
+    aicp_cedric-user \
+    aicp_cedric-userdebug \
+    aicp_cedric-eng
