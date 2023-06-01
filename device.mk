@@ -58,6 +58,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     init.device.rc
 
+# Recorder
+PRODUCT_PACKAGES += \
+    Recorder
+
 # Sensors
 PRODUCT_PACKAGES += \
     motosh
