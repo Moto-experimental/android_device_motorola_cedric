@@ -42,3 +42,6 @@ patchelf --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${DEVICE_BLOB_RO
 patchelf --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${DEVICE_BLOB_ROOT}/vendor/lib/libseemore.so"
 patchelf --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${DEVICE_BLOB_ROOT}/vendor/lib/libtrueportrait.so"
 patchelf --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${DEVICE_BLOB_ROOT}/vendor/lib/libubifocus.so"
+
+# Use libhidlbase-v32 for select Android P blobs
+patchelf --replace-needed "libhidlbase.so" "libhidlbase-v32.so" "${DEVICE_BLOB_ROOT}/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-fpcservice"
