@@ -32,3 +32,13 @@ sed -i "s/libgui/libwui/" "${DEVICE_BLOB_ROOT}/vendor/lib/libmmcamera_ppeiscore.
 patchelf --add-needed libppeiscore_shim.so "${DEVICE_BLOB_ROOT}/vendor/lib/libmmcamera_ppeiscore.so"
 sed -i "s/system input/system uhid input/" "${DEVICE_BLOB_ROOT}/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc"
 sed -i "s/class late_start/class hal/" "${DEVICE_BLOB_ROOT}/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc"
+
+# Replace libstdc++.so with libstdc++_vendor.so
+patchelf --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${DEVICE_BLOB_ROOT}/vendor/lib/libDepthBokehEffect.so"
+patchelf --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${DEVICE_BLOB_ROOT}/vendor/lib/libDepthBokehEffect2.so"
+patchelf --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${DEVICE_BLOB_ROOT}/vendor/lib/libchromaflash.so"
+patchelf --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${DEVICE_BLOB_ROOT}/vendor/lib/libmmcamera_hdr_gb_lib.so"
+patchelf --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${DEVICE_BLOB_ROOT}/vendor/lib/liboptizoom.so"
+patchelf --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${DEVICE_BLOB_ROOT}/vendor/lib/libseemore.so"
+patchelf --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${DEVICE_BLOB_ROOT}/vendor/lib/libtrueportrait.so"
+patchelf --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${DEVICE_BLOB_ROOT}/vendor/lib/libubifocus.so"
