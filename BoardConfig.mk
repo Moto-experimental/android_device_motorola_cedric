@@ -23,8 +23,8 @@ TARGET_SCREEN_DENSITY := 420
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Kernel
-TARGET_KERNEL_CONFIG := cedric_defconfig
-TARGET_KERNEL_RECOVERY_CONFIG := cedric_recovery_defconfig
+TARGET_KERNEL_CONFIG += vendor/moto/cedric.config
+TARGET_KERNEL_RECOVERY_CONFIG += vendor/moto/cedric.config
 
 # Partitions
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 16879616
